@@ -4,7 +4,7 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
+  //SimpleGrid,
   Button,
   List,
   ListItem,
@@ -14,10 +14,11 @@ import {
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { Table } from '../components/table'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoDisc } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -25,6 +26,8 @@ import Image from 'next/image'
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
+
+const colour = 'yellow';
 
 const Home = () => (
   <Layout>
@@ -37,7 +40,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hello, I&apos;m a Computer Science student based in Guelph!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -64,7 +67,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/IMG_7527.JPG"
               alt="Profile image"
               borderRadius="full"
               width="100"
@@ -80,23 +83,9 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I'm a full-stack developer based in Guelph with a
-          passion for fullstack developmet. At the moment, I'm learning about Blockchain
+          passion for fullstack development. At the moment, I'm learning about Blockchain
           with Solidity and Machine Learning. Currently, I am seeking internships and co-op
           opportunities to further enhance my skills and contribute to real-world projects.{' '}
-          {/* <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link> */}
-          {/* . He publishes content for marketing his products and his YouTube
-          channel called &quot; */}
-          {/* <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link> */}
-          {/* &quot; has more than 100k subscribers. */}
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -104,7 +93,7 @@ const Home = () => (
             href="/works"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
+            colorScheme={colour}
           >
             My portfolio
           </Button>
@@ -115,30 +104,41 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <BioSection>
-          <BioYear>Sept 2020</BioYear>
-          Started studies at the University of Guelph.
-        </BioSection>
-        <BioSection>
-          <BioYear>Jan 2022</BioYear>
-          Participated in Hack the Job 2022, my first hackathon.
-        </BioSection>
-        <BioSection>
-          <BioYear>July 2022</BioYear>
-          Worked at Condoworks as a Junior Software Developer.
-        </BioSection>
-        <BioSection>
-          <BioYear>May 2023</BioYear>
-          Participated in GryphHacks 2023 and won.
-        </BioSection>
-        <BioSection>
-          <BioYear>June 2023</BioYear>
-          Attended AWS Summit, participated in the ETHGlobal &nbsp Waterloo hackathon and volunteered at Collision Conference.
-        </BioSection>
-        <BioSection>
-          <BioYear>July 2023</BioYear>
-          Volunteered for Pocket Gamer Connects.
-        </BioSection>
+        <Table>
+          <tr>
+            <td>Sept 2020</td>
+            <td>Started studies at the University of Guelph.</td>
+          </tr><br/>
+          <tr>
+            <td>May 2021</td>
+            <td>Participated in BCompathon, my first hackathon. I was unable to make a submission as I had to leave during the hackathon. I still decided to work on the <Link href="https://github.com/joutad/DiscordSlotMachine">project</Link> on my own time after the hackathon ended.</td>
+          </tr><br/>
+          <tr>
+            <td>Jan 2022</td>
+            <td>Participated in Hack the Job 2022, my first <Link href="https://github.com/joutad/2d-golf-game">completed</Link> hackathon.</td>
+          </tr><br/>
+          <tr>
+            <td>July 2022</td>
+            <td>Worked at <Link href='https://www.condoworks.co/'>Condoworks</Link> as a Junior Software Developer.</td>
+          </tr><br/>
+          <tr>
+            <td>May 2023</td>
+            <td>Participated in <Link href='https://gryphhacks.com/home'>GryphHacks 2023</Link> and <Link href='https://gryphhacks-2023.devpost.com/project-gallery'>won</Link>.</td>
+          </tr><br/>
+          <tr>
+            <td>June 2023</td>
+            <td>Attended <Link href='https://aws.amazon.com/events/summits/toronto/'>AWS Summit 2023</Link>, participated in the <Link href='https://ethglobal.com/events/waterloo2023'>ETHGlobal Waterloo</Link> hackathon and volunteered at <Link href='https://collisionconf.com/'>Collision Conference</Link>.</td>
+          </tr><br/>
+          <tr>
+            <td>July 2023</td>
+            <td>Volunteered for <Link href='https://www.pgconnects.com/toronto/'>Pocket Gamer Connects</Link>.</td>
+          </tr><br/>
+          <tr>
+            <td>August 2023</td>
+            <td>Participated in OneHacks III. Results TBA.<br />
+            Participated in TechTogether. Results TBA.</td>
+          </tr>
+        </Table>
       </Section>
 
       <Section delay={0.3}>
@@ -146,15 +146,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Programming, Music, Events, Hackathons, TV, Leetcode, Exploring cities, Making an effort to reduce my carbon footprint.
         </Paragraph>
       </Section>
 
@@ -164,87 +156,39 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/joutad" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme={colour}
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @joutad
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.linkedin.com/in/joudat-haroon/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                colorScheme={colour}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @inkdrop_app (English)
+                @Joudat Haroon
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://devpost.com/jharoon" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                colorScheme={colour}
+                leftIcon={<IoDisc />}
               >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
+                @jharoon
               </Button>
             </Link>
           </ListItem>
         </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;150k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
       </Section>
     </Container>
   </Layout>
