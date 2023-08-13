@@ -1,18 +1,20 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-
+import { Text } from '@chakra-ui/react'
+import Image from 'next/image'
 import thumbAISign from '../public/images/works/ai_sign.png'
 import thumbMolecules from '../public/images/works/h2O.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
+import thumbSlotMachineDiscordBot from '../public/images/works/slot_machine_discord_bot.png'
 import thumbGolfGame from '../public/images/works/2d_golf_game.png'
-import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import Link from 'next/link'
+// import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
+// import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
+// import thumbStyly from '../public/images/works/styly_eyecatch.png'
+// import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
+// import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
+// import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -23,32 +25,66 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="aisign" title="AI Sign" thumbnail={thumbAISign}>
-          An effective platform for individuals to quickly understand and communicate 
-          in the American Sign Language (ASL) with individuals affected with a vocal or 
-          auditory impairment.
-          </WorkGridItem>
+          <Link href={`https://github.com/krishnacheemalapati/GryphHacks23-Submission`}>
+            <Image
+              src={thumbAISign}
+              placeholder="blur"
+              className='grid-item-thumbnail'
+              loading="lazy"
+            />
+            <Text mt={2} style={{textAlign: 'center'}}>AI Sign</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}}>
+              An effective platform for individuals to quickly understand and communicate 
+              in the American Sign Language (ASL) with individuals affected with a vocal or 
+              auditory impairment.
+            </Text>
+          </Link>
         </Section>
         <Section>
-          <WorkGridItem id="molecules" title="Molecules" thumbnail={thumbMolecules}>
-          A web app that parses SDF files, 
-          stores them as molecules in a database, and generates and 
-          displays an SVG image representing the molecule.
-          </WorkGridItem>
+          <Link href={`https://github.com/joutad/molecules`}>
+            <Image
+              src={thumbMolecules}
+              placeholder="blur"
+              className='grid-item-thumbnail'
+              loading="lazy"
+            />
+            <Text mt={2} style={{textAlign: 'center'}}>Molecules</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}}>
+              A web app that parses SDF files, 
+              stores them as molecules in a database, and generates and 
+              displays an SVG image representing the molecule.
+            </Text>
+          </Link>
         </Section>
 
         <Section delay={0.1}>
-          <WorkGridItem
-            id="discordslotmachine" title="Slot Machine - Discord Bot" thumbnail={thumbFourPainters}
-          >
-            A discord bot that allows members of a server to play slots!
-            Integration with a currency system still needed...
-          </WorkGridItem>
+          <Link href={`https://github.com/joutad/DiscordSlotMachine`}>
+           <Image
+              src={thumbSlotMachineDiscordBot}
+              placeholder='blur'
+              className='grid-item-thumbnail'
+              loading='lazy'
+            />
+            <Text mt={2} style={{textAlign: 'center'}}>Slot Machine - Discord Bot</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}}>
+              A discord bot that allows members of a server to play slots!
+              Integration with a currency system still needed...
+            </Text>
+          </Link>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="2dgolfgame" thumbnail={thumbGolfGame} title="2D Golf Game">
-            A browser game with rudimentary physics enabled, allowing players to shoot golf balls. Built entirely in JavaScript.
-          </WorkGridItem>
+          <Link href={`https://github.com/joutad/2d-golf-game`}>
+           <Image
+              src={thumbGolfGame}
+              placeholder='blur'
+              className='grid-item-thumbnail'
+              loading='lazy'
+            />
+            <Text mt={2} style={{textAlign: 'center'}}>2D Golf Game</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}}>
+              A browser game with rudimentary physics enabled, allowing players to shoot golf balls. Built entirely in JavaScript.
+            </Text>
+          </Link>
         </Section>
       </SimpleGrid>
 

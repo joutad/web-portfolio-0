@@ -11,23 +11,23 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+// import { BioSection, BioYear } from '../components/bio'
 import { Table } from '../components/table'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+// import { GridItem } from '../components/grid-item'
 import { IoLogoGithub, IoLogoLinkedin, IoDisc } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+// import thumbYouTube from '../public/images/links/youtube.png'
+// import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-const colour = 'yellow';
+// const colour = useColorModeValue('red', 'yellow');
 
 const Home = () => (
   <Layout>
@@ -82,10 +82,10 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I'm a full-stack developer based in Guelph with a
-          passion for fullstack development. At the moment, I'm learning about Blockchain
+          I&apos;m a full-stack developer based in Guelph with a
+          passion for fullstack development. At the moment, I&apos;m learning about Blockchain
           with Solidity and Machine Learning. Currently, I am seeking internships and co-op
-          opportunities to further enhance my skills and contribute to real-world projects.{' '}
+          opportunities to further enhance my skills and contribute to real-world projects.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -93,7 +93,7 @@ const Home = () => (
             href="/works"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
-            colorScheme={colour}
+            colorScheme={useColorModeValue('red', 'yellow')}
           >
             My portfolio
           </Button>
@@ -105,39 +105,43 @@ const Home = () => (
           Bio
         </Heading>
         <Table>
-          <tr>
-            <td>Sept 2020</td>
-            <td>Started studies at the University of Guelph.</td>
-          </tr><br/>
-          <tr>
-            <td>May 2021</td>
-            <td>Participated in BCompathon, my first hackathon. I was unable to make a submission as I had to leave during the hackathon. I still decided to work on the <Link href="https://github.com/joutad/DiscordSlotMachine">project</Link> on my own time after the hackathon ended.</td>
-          </tr><br/>
-          <tr>
-            <td>Jan 2022</td>
-            <td>Participated in Hack the Job 2022, my first <Link href="https://github.com/joutad/2d-golf-game">completed</Link> hackathon.</td>
-          </tr><br/>
-          <tr>
-            <td>July 2022</td>
-            <td>Worked at <Link href='https://www.condoworks.co/'>Condoworks</Link> as a Junior Software Developer.</td>
-          </tr><br/>
-          <tr>
-            <td>May 2023</td>
-            <td>Participated in <Link href='https://gryphhacks.com/home'>GryphHacks 2023</Link> and <Link href='https://gryphhacks-2023.devpost.com/project-gallery'>won</Link>.</td>
-          </tr><br/>
-          <tr>
-            <td>June 2023</td>
-            <td>Attended <Link href='https://aws.amazon.com/events/summits/toronto/'>AWS Summit 2023</Link>, participated in the <Link href='https://ethglobal.com/events/waterloo2023'>ETHGlobal Waterloo</Link> hackathon and volunteered at <Link href='https://collisionconf.com/'>Collision Conference</Link>.</td>
-          </tr><br/>
-          <tr>
-            <td>July 2023</td>
-            <td>Volunteered for <Link href='https://www.pgconnects.com/toronto/'>Pocket Gamer Connects</Link>.</td>
-          </tr><br/>
-          <tr>
-            <td>August 2023</td>
-            <td>Participated in OneHacks III. Results TBA.<br />
-            Participated in TechTogether. Results TBA.</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Sept 2020</td>
+              <td>Started studies at the University of Guelph.</td>
+            </tr>
+            <tr>
+              <td>May 2021
+              <Image src="/../public/images/works/Bcomp_Junecat.png" alt="bkitty" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/><br/>
+              </td>
+              <td>Participated in BCompathon, my first hackathon. I was unable to make a submission as I had to leave during the hackathon. I still decided to work on the <Link href="https://github.com/joutad/DiscordSlotMachine">project</Link> on my own time after the hackathon ended.</td>
+            </tr>
+            <tr>
+              <td>Jan 2022</td>
+              <td>Participated in Hack the Job 2022, my first <Link href="https://github.com/joutad/2d-golf-game">completed</Link> hackathon.</td>
+            </tr>
+            <tr>
+              <td>July 2022</td>
+              <td>Worked at <Link href='https://www.condoworks.co/'>Condoworks</Link> as a Junior Software Developer.</td>
+            </tr>
+            <tr>
+              <td>May 2023</td>
+              <td>Participated in <Link href='https://gryphhacks.com/home'>GryphHacks 2023</Link> and <Link href='https://gryphhacks-2023.devpost.com/project-gallery'>won</Link>.</td>
+            </tr>
+            <tr>
+              <td>June 2023</td>
+              <td>Attended <Link href='https://aws.amazon.com/events/summits/toronto/'>AWS Summit 2023</Link>, participated in the <Link href='https://ethglobal.com/events/waterloo2023'>ETHGlobal Waterloo</Link> hackathon and volunteered at <Link href='https://collisionconf.com/'>Collision Conference</Link>.</td>
+            </tr>
+            <tr>
+              <td>July 2023</td>
+              <td>Volunteered for <Link href='https://www.pgconnects.com/toronto/'>Pocket Gamer Connects</Link>.</td>
+            </tr>
+            <tr>
+              <td>August 2023</td>
+              <td>Participated in OneHacks III. Results TBA.<br />
+              Participated in TechTogether. Results TBA.</td>
+            </tr>
+          </tbody>
         </Table>
       </Section>
 
@@ -146,7 +150,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Programming, Music, Events, Hackathons, TV, Leetcode, Exploring cities, Making an effort to reduce my carbon footprint.
+          Programming, Music, Events, Hackathons, TV, Leetcode, Exploring cities, Fashion, and Making an effort to reduce my carbon footprint.
         </Paragraph>
       </Section>
 
@@ -159,7 +163,7 @@ const Home = () => (
             <Link href="https://github.com/joutad" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme={colour}
+                colorScheme={useColorModeValue('red', 'yellow')}
                 leftIcon={<IoLogoGithub />}
               >
                 @joutad
@@ -170,7 +174,7 @@ const Home = () => (
             <Link href="https://www.linkedin.com/in/joudat-haroon/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme={colour}
+                colorScheme={useColorModeValue('red', 'yellow')}
                 leftIcon={<IoLogoLinkedin />}
               >
                 @Joudat Haroon
@@ -181,7 +185,7 @@ const Home = () => (
             <Link href="https://devpost.com/jharoon" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme={colour}
+                colorScheme={useColorModeValue('red', 'yellow')}
                 leftIcon={<IoDisc />}
               >
                 @jharoon
