@@ -19,6 +19,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoGithub, IoLogoLinkedin, IoDisc } from 'react-icons/io5'
+import bKitty from '../public/images/works/Bcomp_Junecat.png'
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -112,7 +113,7 @@ const Home = () => (
             </tr>
             <tr>
               <td>May 2021
-              <Image src="/../public/images/works/Bcomp_Junecat.png" alt="bkitty" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/><br/>
+              <Image src={bKitty} alt="bkitty" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/><br/>
               </td>
               <td>Participated in BCompathon, my first hackathon. I was unable to make a submission as I had to leave during the hackathon. I still decided to work on the <Link href="https://github.com/joutad/DiscordSlotMachine">project</Link> on my own time after the hackathon ended.</td>
             </tr>
