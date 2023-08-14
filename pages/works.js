@@ -1,7 +1,6 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
 import { Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import thumbAISign from '../public/images/works/ai_sign.png'
@@ -28,6 +27,7 @@ const Works = () => (
           <Link href={`https://github.com/krishnacheemalapati/GryphHacks23-Submission`}>
             <Image
               src={thumbAISign}
+              alt='thumbnail for AI Sign'
               placeholder="blur"
               className='grid-item-thumbnail'
               loading="lazy"
@@ -44,6 +44,7 @@ const Works = () => (
           <Link href={`https://github.com/joutad/molecules`}>
             <Image
               src={thumbMolecules}
+              alt='thumbnail for Molecules project'
               placeholder="blur"
               className='grid-item-thumbnail'
               loading="lazy"
@@ -61,6 +62,7 @@ const Works = () => (
           <Link href={`https://github.com/joutad/DiscordSlotMachine`}>
            <Image
               src={thumbSlotMachineDiscordBot}
+              alt='thumbnail for Slot Machine Discord Bot'
               placeholder='blur'
               className='grid-item-thumbnail'
               loading='lazy'
@@ -76,6 +78,7 @@ const Works = () => (
           <Link href={`https://github.com/joutad/2d-golf-game`}>
            <Image
               src={thumbGolfGame}
+              alt='thumbnail for 2D Golf Game project'
               placeholder='blur'
               className='grid-item-thumbnail'
               loading='lazy'
