@@ -12,7 +12,7 @@ export default class Document extends NextDocument {
           <Main />
           <NextScript />
           {/* <br/><br/> */}
-          <a href='https://www.craftz.dog/' target='_blank' rel="noreferrer">Takuya Matsuyama&apos;s website</a>
+          <a href='https://www.craftz.dog/' target='_blank' rel="noreferrer" style={{position: 'relative', top: '42vh'}}>Based on Takuya&apos;s website</a>
           {/* This website is built based on the <a href='https://www.craftz.dog/' target='_blank'>Takuya Matsuyama's website</a> */}
         </body>
       </Html>

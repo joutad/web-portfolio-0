@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Center, Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { Text } from '@chakra-ui/react'
@@ -7,13 +7,8 @@ import thumbAISign from '../public/images/works/ai_sign.png'
 import thumbMolecules from '../public/images/works/h2O.png'
 import thumbSlotMachineDiscordBot from '../public/images/works/slot_machine_discord_bot.png'
 import thumbGolfGame from '../public/images/works/2d_golf_game.png'
+import thumbSnakeGame from '../public/images/works/snakegame.png'
 import Link from 'next/link'
-// import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-// import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-// import thumbStyly from '../public/images/works/styly_eyecatch.png'
-// import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-// import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-// import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -89,69 +84,24 @@ const Works = () => (
             </Text>
           </Link>
         </Section>
-      </SimpleGrid>
-
-      {/* <Section delay={0.2}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-            A website of the elite app development and contracting agency based
-            in Austria
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
-          >
-            The mode magazine for understanding to personally enjoy Japan
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
+        <Section delay={0.1}>
+          <Link href={`https://github.com/joutad/Snake-game-libGDX`}>
+            <Center>
+              <Image
+                  src={thumbSnakeGame}
+                  alt='thumbnail for Snake Game project'
+                  placeholder='blur'
+                  className='grid-item-thumbnail'
+                  loading='lazy'
+                />
+            </Center>
+            <Text mt={2} style={{textAlign: 'center'}}>Snake Game</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}}>
+              A classic game brought back to life, on your desktop!
+            </Text>
+          </Link>
         </Section>
       </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
-          <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
-          >
-            Automatic audio file tagging tool using FreeDB for Windows
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid> */}
     </Container>
   </Layout>
 )
