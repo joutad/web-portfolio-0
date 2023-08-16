@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Heading, Box, Image, Link, Badge, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { Heading, Box, Image, Link, Badge, useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({ children }) => (
@@ -7,15 +7,6 @@ export const Title = ({ children }) => (
     <Link as={NextLink} href="/blogs" style={useColorModeValue({color: '#1a202c'}, {})}>
       Blogs
     </Link>
-    {/* {useColorMode().colorMode === 'dark' ?
-    <Link as={NextLink} href="/blogs">
-      Blogs
-    </Link>:
-    <Link as={NextLink} href="/blogs" style={{color: '#ffffffeb'}}>
-      Blogs
-    </Link>} */}
-      {/* Blogs */}
-    {/* </Link> */}
     <span>
       {' '}
       <ChevronRightIcon />{' '}

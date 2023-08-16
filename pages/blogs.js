@@ -1,9 +1,7 @@
-import { Container, Heading, SimpleGrid, useColorMode } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { Text } from '@chakra-ui/react'
-import Image from 'next/image'
-import thumbAISign from '../public/images/works/ai_sign.png'
 import Link from 'next/link'
 
 const imgStyle = {
