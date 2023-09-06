@@ -87,9 +87,9 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I&apos;m a computer science student based in Guelph with a
-          passion for full-stack development. At the moment, I&apos;m learning about Blockchain
-          with Solidity and Machine Learning. Currently, I am seeking internships and co-op
-          opportunities to further enhance my skills and contribute to real-world projects.
+          passion for full-stack development. At the moment, I&apos;m learning about Machine Learning.
+          Currently, I am seeking internships and co-op opportunities to
+          further enhance my skills and contribute to real-world projects.
         </Paragraph>
         <Center>
           <Box align="center" mx={4} my={4} style={{display: 'inline'}}>
@@ -167,8 +167,7 @@ const Home = () => (
             </tr>
             <tr>
               <td>August 2023</td>
-              <td>Participated in OneHacks III. Results TBA.<br />
-              Participated in TechTogether. Results TBA.</td>
+              <td>Participated in OneHacks III, TechTogether, and Ignition Hacks.</td>
             </tr>
           </tbody>
         </Table>
