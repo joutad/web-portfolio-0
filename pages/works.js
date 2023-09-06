@@ -8,6 +8,7 @@ import thumbMolecules from '../public/images/works/h2O.png'
 import thumbSlotMachineDiscordBot from '../public/images/works/slot_machine_discord_bot.png'
 import thumbGolfGame from '../public/images/works/2d_golf_game.png'
 import thumbSnakeGame from '../public/images/works/snakegame.png'
+import thumbTackApp from '../public/images/works/tack-app.png'
 import Link from 'next/link'
 
 const Works = () => (
@@ -98,6 +99,24 @@ const Works = () => (
             <Text mt={2} style={{textAlign: 'center'}}>Snake Game</Text>
             <Text fontSize={14} style={{textAlign: 'center'}}>
               A classic game brought back to life, on your desktop!
+            </Text>
+          </Link>
+        </Section>
+        <Section delay={0.1}>
+          <Link href={`https://github.com/joutad/Tack-App`}>
+            <Center>
+              <Image
+                  src={thumbTackApp}
+                  alt='thumbnail for Snake Game project'
+                  placeholder='blur'
+                  className='grid-item-thumbnail'
+                  loading='lazy'
+                  height={'150'}
+                />
+            </Center>
+            <Text mt={2} style={{textAlign: 'center'}}>Tack App</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}}>
+              Keep track of household items! Object detection now works with React-Native frontend, solution hasn't been pushed yet!
             </Text>
           </Link>
         </Section>

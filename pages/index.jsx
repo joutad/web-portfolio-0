@@ -24,6 +24,7 @@ import AWSSummit from '../public/images/links/AWSSummit.jpg'
 import CollisionConference from '../public/images/links/CollisionConference.jpg'
 import GryphHacks from '../public/images/works/gryphhacks.webp'
 import PocketGamerConnects from '../public/images/links/PGC-TORONTO-23-Logo.png'
+import IgnitionHacks from '../public/images/links/IgnitionHacks2023.jpeg'
 import Condoworks from '../public/images/contents/condoworks.jpg'
 import Guelph from '../public/images/contents/guelph.png'
 import Image from 'next/image'
@@ -71,11 +72,14 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/IMG_7527.JPG"
+              src="/images/profile.JPG"
               alt="Profile image"
               borderRadius="full"
+              pos={'relative'}
+              left={'1%'}
+              top={'-15%'}
               width="100"
-              height="100"
+              height="134"
             />
           </Box>
         </Box>
@@ -83,11 +87,13 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About Me
         </Heading>
         <Paragraph>
           I&apos;m a computer science student based in Guelph with a
-          passion for full-stack development. At the moment, I&apos;m learning about Machine Learning.
+          passion for full-stack development. Recently I&apos;ve been making
+          an effort to be more active on <Link href='https://github.com/joutad'>GitHub</Link>.
+          At the moment, I&apos;m trying to incorporate Artificial Intelligence into my projects.
           Currently, I am seeking internships and co-op opportunities to
           further enhance my skills and contribute to real-world projects.
         </Paragraph>
@@ -95,7 +101,7 @@ const Home = () => (
           <Box align="center" mx={4} my={4} style={{display: 'inline'}}>
             <Button
               as={NextLink}
-              href="/2023_8_16_Resume.pdf"
+              href="/2023_09_06_Resume.pdf"
               scroll={false}
               rightIcon={<ViewIcon />}
               colorScheme={useColorModeValue('red', 'yellow')}
@@ -166,8 +172,10 @@ const Home = () => (
               <td>Volunteered for <Link href='https://www.pgconnects.com/toronto/'>Pocket Gamer Connects</Link>.</td>
             </tr>
             <tr>
-              <td>August 2023</td>
-              <td>Participated in OneHacks III, TechTogether, and Ignition Hacks.</td>
+              <td>August 2023
+              <Image src={IgnitionHacks} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+              </td>
+              <td>Participated in OneHacks III, TechTogether, and <Link href='https://www.ignitionhacks.org/'>Ignition Hacks</Link>.</td>
             </tr>
           </tbody>
         </Table>
