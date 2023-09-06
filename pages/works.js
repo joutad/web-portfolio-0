@@ -116,7 +116,7 @@ const Works = () => (
             </Center>
             <Text mt={2} style={{textAlign: 'center'}}>Tack App</Text>
             <Text fontSize={14} style={{textAlign: 'center'}}>
-              Keep track of household items! Object detection now works with React-Native frontend, solution hasn't been pushed yet!
+              Keep track of household items! Object detection now works with React-Native frontend, solution hasn&apos;t been pushed yet!
             </Text>
           </Link>
         </Section>
