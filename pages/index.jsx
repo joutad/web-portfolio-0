@@ -25,6 +25,7 @@ import CollisionConference from '../public/images/links/CollisionConference.jpg'
 import GryphHacks from '../public/images/works/gryphhacks.webp'
 import PocketGamerConnects from '../public/images/links/PGC-TORONTO-23-Logo.png'
 import IgnitionHacks from '../public/images/links/IgnitionHacks2023.jpeg'
+import HackTheNorth from '../public/images/links/hackthenorth.jpg'
 import Condoworks from '../public/images/contents/condoworks.jpg'
 import Guelph from '../public/images/contents/guelph.png'
 import Image from 'next/image'
@@ -176,6 +177,12 @@ const Home = () => (
               <Image src={IgnitionHacks} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
               </td>
               <td>Participated in OneHacks III, TechTogether, and <Link href='https://www.ignitionhacks.org/'>Ignition Hacks</Link>.</td>
+            </tr>
+            <tr>
+              <td>September 2023
+              <Image src={HackTheNorth} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+              </td>
+              <td>Volunteered for <Link href='https://hackthenorth.com/'>Hack The North</Link>. Blog coming up soon!</td>
             </tr>
           </tbody>
         </Table>

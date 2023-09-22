@@ -29,7 +29,7 @@ const Main = ({ children, router }) => {
         <br />
         {/* <br /> */}
         <Center h='100px' color='white'>
-          <Image src={HeaderImage} alt="ETH Global" width={96} height={96} style={{position: 'relative', }}/>
+          <Image src={HeaderImage} alt="Header Image" width={96} height={96} style={{position: 'relative', }}/>
         </Center>
         <br />
         {children}

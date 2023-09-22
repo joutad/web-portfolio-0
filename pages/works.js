@@ -9,6 +9,7 @@ import thumbSlotMachineDiscordBot from '../public/images/works/slot_machine_disc
 import thumbGolfGame from '../public/images/works/2d_golf_game.png'
 import thumbSnakeGame from '../public/images/works/snakegame.png'
 import thumbTackApp from '../public/images/works/tack-app.png'
+import thumbWorkoutBuddy from '../public/images/works/dumbbell.png'
 import Link from 'next/link'
 
 const Works = () => (
@@ -107,7 +108,7 @@ const Works = () => (
             <Center>
               <Image
                   src={thumbTackApp}
-                  alt='thumbnail for Snake Game project'
+                  alt='thumbnail for Tack App'
                   placeholder='blur'
                   className='grid-item-thumbnail'
                   loading='lazy'
@@ -117,6 +118,24 @@ const Works = () => (
             <Text mt={2} style={{textAlign: 'center'}}>Tack App</Text>
             <Text fontSize={14} style={{textAlign: 'center'}}>
               Keep track of household items! Object detection now works with React-Native frontend, solution hasn&apos;t been pushed yet!
+            </Text>
+          </Link>
+        </Section>
+        <Section delay={0.1}>
+          <Link href={`https://github.com/joutad/Tack-App`}>
+            <Center>
+              <Image
+                  src={thumbWorkoutBuddy}
+                  alt='thumbnail for Workout Buddy'
+                  placeholder='blur'
+                  className='grid-item-thumbnail'
+                  loading='lazy'
+                  height={'150'}
+                />
+            </Center>
+            <Text mt={2} style={{textAlign: 'center'}}>Workout Buddy</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}}>
+              Your very own time capsule for workouts!
             </Text>
           </Link>
         </Section>
