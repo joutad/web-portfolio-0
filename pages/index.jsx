@@ -73,14 +73,11 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/profile.JPG"
+              src="/images/profile.jpeg"
               alt="Profile image"
               borderRadius="full"
-              pos={'relative'}
-              left={'1%'}
-              top={'-15%'}
               width="100"
-              height="134"
+              height="100"
             />
           </Box>
         </Box>
