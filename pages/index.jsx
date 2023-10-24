@@ -102,7 +102,7 @@ const Home = () => (
           <Box align="center" mx={4} my={4} style={{display: 'inline'}}>
             <Button
               as={NextLink}
-              href="/2023_09_06_Resume.pdf"
+              href="/2023_10_24_Resume.pdf"
               scroll={false}
               rightIcon={<ViewIcon />}
               colorScheme={useColorModeValue('red', 'yellow')}
