@@ -26,10 +26,12 @@ import GryphHacks from '../public/images/works/gryphhacks.webp'
 import PocketGamerConnects from '../public/images/links/PGC-TORONTO-23-Logo.png'
 import IgnitionHacks from '../public/images/links/IgnitionHacks2023.jpeg'
 import HackTheNorth from '../public/images/links/HackTheNorth.jpg'
+import HackTheValley8 from '../public/images/links/HackTheValley8.png'
 import Condoworks from '../public/images/contents/condoworks.jpg'
 import Guelph from '../public/images/contents/guelph.png'
+import TableContents from '../components/table'
 import Image from 'next/image'
-import { Skill } from '../components/skill'
+import { Skill, Skills } from '../components/skill'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -45,6 +47,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
+        fontFamily={'Manrope'}
       >
         Hello, I&apos;m a Computer Science student based in Guelph!
       </Box>
@@ -54,7 +57,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Joudat Haroon
           </Heading>
-          <p>Computer Science student ( Fullstack / Machine Learning )</p>
+          <p style={{fontFamily: 'Manrope'}}>Computer Science student ( Fullstack / Machine Learning )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -87,7 +90,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           About Me
         </Heading>
-        <Paragraph>
+        <Paragraph style={{fontFamily:"Manrope"}}>
           I&apos;m a computer science student based in Guelph with a
           passion for full-stack development. Recently I&apos;ve been making
           an effort to be more active on <Link href='https://github.com/joutad'>GitHub</Link>.
@@ -95,7 +98,7 @@ const Home = () => (
           Currently, I am seeking internships and co-op opportunities to
           further enhance my skills and contribute to real-world projects.
         </Paragraph>
-        <Center>
+        <Center fontFamily={'Manrope'}>
           <Box align="center" mx={4} my={4} style={{display: 'inline'}}>
             <Button
               as={NextLink}
@@ -170,76 +173,91 @@ const Home = () => (
               <td>Volunteered for <Link href='https://www.pgconnects.com/toronto/'>Pocket Gamer Connects</Link>.</td>
             </tr>
             <tr>
-              <td>August 2023
+              <td>Aug 2023
               <Image src={IgnitionHacks} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
               </td>
-              <td>Participated in OneHacks III, TechTogether, and <Link href='https://www.ignitionhacks.org/'>Ignition Hacks</Link>.</td>
+              <td>Participated in <Link href='https://www.ignitionhacks.org/'>Ignition Hacks</Link>.</td>
             </tr>
             <tr>
-              <td>September 2023
+              <td>Sept 2023
               <Image src={HackTheNorth} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
               </td>
-              <td>Volunteered for <Link href='https://hackthenorth.com/'>Hack The North</Link>. Blog coming up soon!</td>
+              <td>Volunteered for <Link href='https://hackthenorth.com/'>Hack The North</Link>.</td>
+            </tr>
+            <tr>
+              <td>Oct 2023
+              <Image src={HackTheValley8} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+              </td>
+              <td>Participated in <Link href='https://hack-the-valley-8.devpost.com/'>Hack The Valley 8</Link> and won <Link href='https://devpost.com/software/heckler-ai'>First Place</Link>!</td>
             </tr>
           </tbody>
         </Table>
+      {/* <TableContents /> */}
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Skills
         </Heading>
-        <Skill><img src={'https://www.computerhope.com/jargon/j/javascript.png'}/></Skill>
-        <Skill><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"/></Skill>
-        <Skill><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/380px-C_Programming_Language.svg.png?20201031132917" alt=""/></Skill>
-        <Skill><img src="https://assets.zabbix.com/img/brands/java.svg" alt=""/></Skill>
-        <Skill><img src="https://miro.medium.com/v2/resize:fit:300/1*A_Hg7NPIoARg0RmdsVapqg.png" alt=""/></Skill>
-        <Skill><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" alt="" /></Skill>
-        <Skill>{useColorMode().colorMode === 'dark' ? <img src="https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png" alt=""/> : <img src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" alt=""/>}</Skill>
-        <Skill><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt=""/></Skill>
-        <Skill><img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt=""/></Skill>
-        <Skill><img src="https://avatars.githubusercontent.com/u/15658638?s=280&v=4" alt="" /></Skill>
-        <Skill>
-          {
-            useColorMode().colorMode === 'dark' ? 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/800px-OpenCV_Logo_with_text_svg_version.svg.png" alt="" style={{backgroundColor: 'white'}}/> :
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/800px-OpenCV_Logo_with_text_svg_version.svg.png" alt="" />
-          }
-        </Skill>
-        <Skill><img src="https://symbols.getvecta.com/stencil_28/61_sql-database-generic.90b41636a8.svg" alt=""/></Skill>
-        <Skill>
-          <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="" width={64} height={64}/>
-            <Center style={{fontWeight: 'bold'}}>HTML</Center>
-          </div>
-        </Skill>
-        <Skill>
-          <div>
-            <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt=""/>
-            <Center style={{fontWeight: 'bold'}}>CSS</Center>
-          </div>
-        </Skill>
-        <Skill>
-          <img src="https://avatars.githubusercontent.com/u/6906516?s=200&v=4" alt=""/>
-        </Skill>
-        <Skill>
-          <img src="https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png" alt="" />
-        </Skill>
-        <Skill>
-          <div>
-            <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png" alt="" />
-            <Center style={{fontWeight: 'bold'}}>mongoDB</Center>
-          </div>
-        </Skill>
-        <Skill>
-          <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" />
-        </Skill>
-        <Skill>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="" />
-        </Skill>
-        <Skill>
-          <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="" />
-        </Skill>
+        <Skills>
+          <Skill><img src={'https://www.computerhope.com/jargon/j/javascript.png'}/></Skill>
+          <Skill><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"/></Skill>
+          <Skill><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/380px-C_Programming_Language.svg.png?20201031132917" alt=""/></Skill>
+          <Skill><img src="https://assets.zabbix.com/img/brands/java.svg" alt=""/></Skill>
+          <Skill><img src="https://miro.medium.com/v2/resize:fit:300/1*A_Hg7NPIoARg0RmdsVapqg.png" alt=""/></Skill>
+          <Skill><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" alt="" /></Skill>
+          <Skill>{useColorMode().colorMode === 'dark' ? <img src="https://www.datocms-assets.com/75941/1657707878-nextjs_logo.png" alt=""/> : <img src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" alt=""/>}</Skill>
+          <Skill><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt=""/></Skill>
+          <Skill><img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt=""/></Skill>
+          <Skill><img src="https://avatars.githubusercontent.com/u/15658638?s=280&v=4" alt="" /></Skill>
+          <Skill>
+            {
+              useColorMode().colorMode === 'dark' ? 
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/800px-OpenCV_Logo_with_text_svg_version.svg.png" alt="" style={{backgroundColor: 'white'}}/> :
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/800px-OpenCV_Logo_with_text_svg_version.svg.png" alt="" />
+            }
+          </Skill>
+          <Skill><img src="https://symbols.getvecta.com/stencil_28/61_sql-database-generic.90b41636a8.svg" alt=""/></Skill>
+          <Skill>
+            <div>
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="" width={64} height={64}/>
+              <Center style={{fontWeight: 'bold'}}>HTML</Center>
+            </div>
+          </Skill>
+          <Skill>
+            <div>
+              <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt=""/>
+              <Center style={{fontWeight: 'bold'}}>CSS</Center>
+            </div>
+          </Skill>
+          <Skill>
+            <div>
+              <img src="https://assets.codepen.io/5409376/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1607020963&width=512" alt=""/>
+              <Center style={{fontWeight: 'bold'}}>MediaPipe</Center>
+            </div>
+          </Skill>
+          <Skill>
+            <img src="https://avatars.githubusercontent.com/u/6906516?s=200&v=4" alt=""/>
+          </Skill>
+          <Skill>
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-jquery-8-1175153.png" alt="" />
+          </Skill>
+          <Skill>
+            <div>
+              <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png" alt="" />
+              <Center style={{fontWeight: 'bold'}}>mongoDB</Center>
+            </div>
+          </Skill>
+          <Skill>
+            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" />
+          </Skill>
+          <Skill>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="" />
+          </Skill>
+          <Skill>
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="" />
+          </Skill>
+        </Skills>
 
       </Section>
 
@@ -247,7 +265,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
-        <Paragraph>
+        <Paragraph style={{fontFamily: 'Manrope'}}>
           Programming, Winter, Music, Events, Hackathons, TV, Leetcode, Exploring cities, Fashion, and Making an effort to reduce my carbon footprint.
         </Paragraph>
       </Section>

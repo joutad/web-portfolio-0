@@ -21,7 +21,7 @@ const Blogs = () => (
         <Section>
           <Link href={'/blogs/condoworksreport'}>
             <img src="https://uploads-ssl.webflow.com/6073129772cc435eb786ae05/607314c0bc149d9a5a8bf442_cw_logo.png" alt="" style={imgStyle}/> 
-            <Text mt={2} style={{textAlign: 'center'}}>Co-op Work Term Report</Text>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'Manrope'}>Co-op Work Term Report</Text>
             <Text fontSize={14} style={{textAlign: 'center'}}>
               CondoWorks Summer - Fall Internship 2022
             </Text>

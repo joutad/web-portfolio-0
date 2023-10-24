@@ -8,6 +8,7 @@ const Paragraph = styled.p`
     color: #202023;
     background-color: whitesmoke;
   }
+  font-family: 'Manrope';
 `
 
 export default Paragraph

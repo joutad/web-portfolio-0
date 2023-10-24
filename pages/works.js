@@ -10,6 +10,7 @@ import thumbGolfGame from '../public/images/works/2d_golf_game.png'
 import thumbSnakeGame from '../public/images/works/snakegame.png'
 import thumbTackApp from '../public/images/works/tack-app.png'
 import thumbWorkoutBuddy from '../public/images/works/dumbbell.png'
+import thumbHecklerAI from '../public/images/works/HecklerAI.png'
 import Link from 'next/link'
 
 const Works = () => (
@@ -21,6 +22,22 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
+          <Link href={`https://github.com/angeladev333/heckler.ai`}>
+            <Image
+              src={thumbHecklerAI}
+              alt='thumbnail for Heckler AI'
+              placeholder="blur"
+              className='grid-item-thumbnail'
+              loading="lazy"
+              style={{backgroundColor: 'white'}}
+            />
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>Heckler AI</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
+              Elevate Your Presence, Perfect Your Pitch. Tracks hand and arm movements, decodes facial cues from smiles to disinterest, and assesses your posture. Provides actionable feedback, helping you refine your presentation skills.
+            </Text>
+          </Link>
+        </Section>
+        <Section>
           <Link href={`https://github.com/krishnacheemalapati/GryphHacks23-Submission`}>
             <Image
               src={thumbAISign}
@@ -29,8 +46,8 @@ const Works = () => (
               className='grid-item-thumbnail'
               loading="lazy"
             />
-            <Text mt={2} style={{textAlign: 'center'}}>AI Sign</Text>
-            <Text fontSize={14} style={{textAlign: 'center'}}>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>AI Sign</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
               An effective platform for individuals to quickly understand and communicate 
               in the American Sign Language (ASL) with individuals affected with a vocal or 
               auditory impairment.
@@ -46,8 +63,8 @@ const Works = () => (
               className='grid-item-thumbnail'
               loading="lazy"
             />
-            <Text mt={2} style={{textAlign: 'center'}}>Molecules</Text>
-            <Text fontSize={14} style={{textAlign: 'center'}}>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>Molecules</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
               A web app that parses SDF files, 
               stores them as molecules in a database, and generates and 
               displays an SVG image representing the molecule.
@@ -64,8 +81,8 @@ const Works = () => (
               className='grid-item-thumbnail'
               loading='lazy'
             />
-            <Text mt={2} style={{textAlign: 'center'}}>Slot Machine - Discord Bot</Text>
-            <Text fontSize={14} style={{textAlign: 'center'}}>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>Slot Machine - Discord Bot</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
               A discord bot that allows members of a server to play slots!
               Integration with a currency system still needed...
             </Text>
@@ -80,8 +97,8 @@ const Works = () => (
               className='grid-item-thumbnail'
               loading='lazy'
             />
-            <Text mt={2} style={{textAlign: 'center'}}>2D Golf Game</Text>
-            <Text fontSize={14} style={{textAlign: 'center'}}>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>2D Golf Game</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
               A browser game with rudimentary physics enabled, allowing players to shoot golf balls. Built entirely in JavaScript.
             </Text>
           </Link>
@@ -97,8 +114,8 @@ const Works = () => (
                   loading='lazy'
                 />
             </Center>
-            <Text mt={2} style={{textAlign: 'center'}}>Snake Game</Text>
-            <Text fontSize={14} style={{textAlign: 'center'}}>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>Snake Game</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
               A classic game brought back to life, on your desktop!
             </Text>
           </Link>
@@ -115,8 +132,8 @@ const Works = () => (
                   height={'150'}
                 />
             </Center>
-            <Text mt={2} style={{textAlign: 'center'}}>Tack App</Text>
-            <Text fontSize={14} style={{textAlign: 'center'}}>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'Manrope'}>Tack App</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
               Keep track of household items! Object detection now works with React-Native frontend, solution hasn&apos;t been pushed yet!
             </Text>
           </Link>
@@ -133,8 +150,8 @@ const Works = () => (
                   height={'150'}
                 />
             </Center>
-            <Text mt={2} style={{textAlign: 'center'}}>Workout Buddy</Text>
-            <Text fontSize={14} style={{textAlign: 'center'}}>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>Workout Buddy</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
               Your very own time capsule for workouts!
             </Text>
           </Link>

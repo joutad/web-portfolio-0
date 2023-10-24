@@ -34,7 +34,7 @@ import {
         <List ml={2} my={8}>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>JavaScript, NodeJS, Puppeteer, Git, UNIX, Agile</span>
+            <span style={{fontFamily: 'Manrope'}}>JavaScript, NodeJS, Puppeteer, Git, UNIX, Agile</span>
           </ListItem>
         </List>
         <Heading as='h4'>Intro</Heading>
@@ -76,10 +76,10 @@ import {
         </P><br/><br/>
   
         <Center>
-          <Link href={'https://www.linkedin.com/company/condoworks/?originalSubdomain=ca'}>Website</Link>
+          <Link href={'https://www.linkedin.com/company/condoworks/?originalSubdomain=ca'} fontFamily={'Manrope'}>Company Website</Link>
         </Center><br/>
         <Center>
-          <Link href={'https://www.linkedin.com/company/condoworks/?originalSubdomain=ca'}>LinkedIn</Link>
+          <Link href={'https://www.linkedin.com/company/condoworks/?originalSubdomain=ca'} fontFamily={'Manrope'}>Company LinkedIn</Link>
         </Center><br/>
       </Container>
     </Layout>

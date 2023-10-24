@@ -77,6 +77,7 @@ const Navbar = props => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
+          style={{fontFamily: 'Manrope'}}
         >
           <LinkItem href="/" path={path}>
             Home
