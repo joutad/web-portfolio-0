@@ -29,7 +29,7 @@ import HackTheNorth from '../public/images/links/HackTheNorth.jpg'
 import HackTheValley8 from '../public/images/links/HackTheValley8.png'
 import Condoworks from '../public/images/contents/condoworks.jpg'
 import Guelph from '../public/images/contents/guelph.png'
-import TableContents from '../components/table'
+// import TableContents from '../components/table'
 import Image from 'next/image'
 import { Skill, Skills } from '../components/skill'
 
