@@ -132,7 +132,7 @@ const Works = () => (
                   height={'150'}
                 />
             </Center>
-            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'Manrope'}>Tack App</Text>
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>Tack App</Text>
             <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
               Keep track of household items! Object detection now works with React-Native frontend, solution hasn&apos;t been pushed yet!
             </Text>
