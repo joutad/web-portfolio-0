@@ -45,7 +45,8 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Joudat Haroon
           </Heading>
-          <p style={{fontFamily: 'Manrope'}}>Computer Science student ( Fullstack / Machine Learning )</p>
+          <p style={{fontFamily: 'Manrope'}}>CS @ UofG</p>
+          <p style={{fontFamily: 'Manrope'}}>Software Developer @ Camis (co-op)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -83,8 +84,8 @@ const Home = () => (
           passion for full-stack development. Recently I&apos;ve been making
           an effort to be more active on <Link href='https://github.com/joutad'>GitHub</Link>.
           At the moment, I&apos;m trying to incorporate Artificial Intelligence into my projects.
-          Currently, I am seeking internships and co-op opportunities to
-          further enhance my skills and contribute to real-world projects.
+          Currently, I&apos;m on a co-op at Camis as a Software Developer, where I&apos;ll be learning practical
+          Software Development skills, collaborating on sprints, and making meaningful contributions to the codebase.
         </Paragraph>
         <Center fontFamily={'Manrope'}>
           <Box align="center" mx={4} my={4} style={{display: 'inline'}}>
