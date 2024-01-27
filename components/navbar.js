@@ -20,7 +20,7 @@ import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const colr = useColorModeValue("white", "antiquewhite");
+  const colr = useColorModeValue("#ffdbe4", "antiquewhite");
   const active = path === href
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
   return (

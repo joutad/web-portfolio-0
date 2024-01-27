@@ -8,6 +8,7 @@ import IgnitionHacks from '../public/images/links/IgnitionHacks2023.jpeg'
 import HackTheNorth from '../public/images/links/HackTheNorth.jpg'
 import HackTheValley8 from '../public/images/links/HackTheValley8.png'
 import Condoworks from '../public/images/contents/condoworks.jpg'
+import Camis from '../public/images/contents/camis_inc_logo.jpeg'
 import Guelph from '../public/images/contents/guelph.png'
 import { Link } from '@chakra-ui/react'
 import Image from 'next/image'
@@ -19,7 +20,7 @@ import React, { useState } from 'react'
 const TableContents = () => {
 
   const [yearBio, setYearBio] = useState("2023")
-  const years = [2020, 2021, 2022, 2023]
+  const years = [2020, 2021, 2022, 2023, 2024]
   // const infoTable = {(
   //   <h1>YO</h1>
   // )}
@@ -112,6 +113,18 @@ const TableContents = () => {
                   <Image src={HackTheValley8} alt="Hack The Valley" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
                   </td>
                   <td>Participated in <Link href='https://hack-the-valley-8.devpost.com/'>Hack The Valley 8</Link> and won <Link href='https://devpost.com/software/heckler-ai'>First Place</Link>!</td>
+                </tr>
+              </>
+            ) : ''
+          }
+          {yearBio === '2024' ? 
+            (
+              <>
+                <tr>
+                  <td>Jan 2024
+                    <Image src={Camis} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+                  </td>
+                  <td>Started co-op at <Link href="https://www.camis.com/">Camis</Link> as a Software Developer!</td>
                 </tr>
               </>
             ) : ''

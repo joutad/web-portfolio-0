@@ -28,8 +28,9 @@ import IgnitionHacks from '../public/images/links/IgnitionHacks2023.jpeg'
 import HackTheNorth from '../public/images/links/HackTheNorth.jpg'
 import HackTheValley8 from '../public/images/links/HackTheValley8.png'
 import Condoworks from '../public/images/contents/condoworks.jpg'
+import Camis from '../public/images/contents/camis_inc_logo.jpeg'
 import Guelph from '../public/images/contents/guelph.png'
-// import TableContents from '../components/table'
+import TableContents from '../components/table'
 import Image from 'next/image'
 import { Skill, Skills } from '../components/skill'
 
@@ -102,10 +103,10 @@ const Home = () => (
           <Box align="center" mx={4} my={4} style={{display: 'inline'}}>
             <Button
               as={NextLink}
-              href="/2023_10_24_Resume.pdf"
+              href="/2024_01_26_Resume.pdf"
               scroll={false}
               rightIcon={<ViewIcon />}
-              colorScheme={useColorModeValue('red', 'yellow')}
+              colorScheme={useColorModeValue('pink', 'yellow')}
             >
               Resume
             </Button>
@@ -116,7 +117,7 @@ const Home = () => (
               href="/works"
               scroll={false}
               rightIcon={<ChevronRightIcon />}
-              colorScheme={useColorModeValue('red', 'yellow')}
+              colorScheme={useColorModeValue('pink', 'yellow')}
             >
               My portfolio
             </Button>
@@ -128,7 +129,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <Table>
+        {/* <Table>
           <tbody className='bioTable'>
             <tr>
               <td>Sept 2020
@@ -190,9 +191,15 @@ const Home = () => (
               </td>
               <td>Participated in <Link href='https://hack-the-valley-8.devpost.com/'>Hack The Valley 8</Link> and won <Link href='https://devpost.com/software/heckler-ai'>First Place</Link>!</td>
             </tr>
+            <tr>
+              <td>Jan 2024
+              <Image src={Camis} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+              </td>
+              <td>Started co-op at <Link href="https://www.camis.com/">Camis</Link> as a Software Developer!</td>
+            </tr>
           </tbody>
-        </Table>
-      {/* <TableContents /> */}
+        </Table> */}
+      <TableContents />
       </Section>
 
       <Section delay={0.3}>
@@ -279,7 +286,7 @@ const Home = () => (
             <Link href="https://github.com/joutad" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme={useColorModeValue('red', 'yellow')}
+                colorScheme={useColorModeValue('pink', 'yellow')}
                 leftIcon={<IoLogoGithub />}
               >
                 @joutad
@@ -290,7 +297,7 @@ const Home = () => (
             <Link href="https://www.linkedin.com/in/joudat-haroon/" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme={useColorModeValue('red', 'yellow')}
+                colorScheme={useColorModeValue('pink', 'yellow')}
                 leftIcon={<IoLogoLinkedin />}
               >
                 @Joudat Haroon
@@ -301,7 +308,7 @@ const Home = () => (
             <Link href="https://devpost.com/jharoon" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme={useColorModeValue('red', 'yellow')}
+                colorScheme={useColorModeValue('pink', 'yellow')}
                 leftIcon={<IoDisc />}
               >
                 @jharoon
