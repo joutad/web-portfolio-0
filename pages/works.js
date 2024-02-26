@@ -11,6 +11,7 @@ import thumbSnakeGame from '../public/images/works/snakegame.png'
 import thumbTackApp from '../public/images/works/tack-app.png'
 import thumbWorkoutBuddy from '../public/images/works/dumbbell.png'
 import thumbHecklerAI from '../public/images/works/HecklerAI.png'
+import thumbLilLearners from '../public/images/works/lil-learners.png'
 import Link from 'next/link'
 
 const Works = () => (
@@ -51,6 +52,23 @@ const Works = () => (
               An effective platform for individuals to quickly understand and communicate 
               in the American Sign Language (ASL) with individuals affected with a vocal or 
               auditory impairment.
+            </Text>
+          </Link>
+        </Section>
+        <Section>
+          <Link href={`https://github.com/joutad/lil-learners/`}>
+            <Image
+              src={thumbLilLearners}
+              alt='thumbnail for Lil&apos; Learners'
+              placeholder="blur"
+              className='grid-item-thumbnail'
+              loading="lazy"
+            />
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'monospace'} fontSize={'1rem'}>Lil&apos; Learners</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}} fontFamily={'Manrope'}>
+            A platform that empowers schoolchildren to personalize their learning
+            journey by decorating their virtual island and earning points through
+            educational games.
             </Text>
           </Link>
         </Section>
