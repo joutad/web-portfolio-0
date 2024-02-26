@@ -7,6 +7,7 @@ import PocketGamerConnects from '../public/images/links/PGC-TORONTO-23-Logo.png'
 import IgnitionHacks from '../public/images/links/IgnitionHacks2023.jpeg'
 import HackTheNorth from '../public/images/links/HackTheNorth.jpg'
 import HackTheValley8 from '../public/images/links/HackTheValley8.png'
+import DeerHacks3 from '../public/images/links/deerhacks2024.png'
 import Condoworks from '../public/images/contents/condoworks.jpg'
 import Camis from '../public/images/contents/camis_inc_logo.jpeg'
 import Guelph from '../public/images/contents/guelph.png'
@@ -80,7 +81,7 @@ const TableContents = () => {
                   <td>May 2023
                     <Image src={GryphHacks} alt="AWS Summit" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/>
                   </td>
-                  <td>Participated in <Link href='https://gryphhacks.com/home'>GryphHacks 2023</Link> and <Link href='https://gryphhacks-2023.devpost.com/project-gallery'>won</Link>.</td>
+                  <td>Participated in <Link href='https://gryphhacks.com/home'>GryphHacks 2023</Link> and <Link href='https://devpost.com/software/ai-sign'>won</Link>!</td>
                 </tr>
                 <tr>
                   <td>June 2023
@@ -126,6 +127,12 @@ const TableContents = () => {
                   </td>
                   <td>Started co-op at <Link href="https://www.camis.com/">Camis</Link> as a Software Developer!</td>
                 </tr>
+                <tr>
+                  <td>Feb 2024
+                    <Image src={DeerHacks3} alt="Deer Hacks 2024" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: '#222'}}/><br/><br/>
+                  </td>
+                  <td>Participated in <Link href="https://deerhacks.ca/">DeerHacks III</Link> and <Link href="https://devpost.com/software/lil-learners">won</Link>!</td>
+                </tr> 
               </>
             ) : ''
           }
