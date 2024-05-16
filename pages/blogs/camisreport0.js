@@ -1,9 +1,3 @@
-//////////////////////////////////////////
-//TODO: Write-up before end of May 15th
-//////////////////////////////////////////
-//////////////////////////////////////////
-//TODO: Add images!
-//////////////////////////////////////////
 import {
     Container,
     Badge,
@@ -17,6 +11,9 @@ import {
   import { Title, Meta } from '../../components/blog'
   import P from '../../components/paragraph'
   import Layout from '../../components/layouts/article'
+  import Image from 'next/image'
+  import imgCamisInternsWinter from '../../public/images/blogs/camisinterns_winter.jpg'
+  import imgCamisInternsEclipse from '../../public/images/blogs/camisinterns_eclipse.jpg'
   
   const h5Style = {
     fontFamily: 'Lora',
@@ -48,10 +45,18 @@ import {
         <P>
             During the Winter of 2024, I had the opportunity to work at Camis as a Software Developer co-op. This position was hybrid, allowing me to experience both in-office collaboration and the flexibility of working from home. The flexible schedule and relaxed dress code provided a comfortable yet productive work environment. The next few sections will provide more details about my first work term experience at Camis.
         </P><br/><br/>
+        <figure>
+          <Image src={imgCamisInternsWinter} />
+          <Center>
+            <P style={{textIndent: '0em'}}>Winter 2024 co-ops</P>
+          </Center>
+        </figure>
+        
+        <br/><br/>
         <Heading as='h4' fontSize={28}>Information about the Employer</Heading>
         <br/>
         <P>
-            Camis is a software solutions company headquartered in Guelph that started with the need to address the requirements of park management all the way back in 1980. They are partnered with national, provincial, and state parks all over Canada and the U.S. to provide reservations and management solutions with the use of software and hardware. In current times, they are working with over 725 government operated facilities. My supervisor is Ryan Ferguson, who is also the lead software developer of the team that I’m on. Besides his leadership role during team meetings and such, he has scheduled one-on-one meetings semi-frequently to allow for feedback to be addressed from either party.
+            Camis is a software solutions company headquartered in Guelph that started with the need to address the requirements of park management all the way back in 1980. They are partnered with national, provincial, and state parks all over Canada and the U.S. to provide reservations and management solutions with the use of software and hardware. In current times, they are working with over 725 government operated facilities. My supervisor is Ryan Ferguson, who is also the lead software developer of the team that I&apos;m on. Besides his leadership role during team meetings and such, he has scheduled one-on-one meetings semi-frequently to allow for feedback to be addressed from either party.
         </P><br/><br/>
         <Heading as='h4' fontSize={28}>Goals</Heading>
         <br/>
@@ -82,6 +87,13 @@ import {
         <P>
           The Winter term was great! At the beginning I struggled with a lot of things, but with constant communication with Ryan and the other developers, I feel that I&apos;m finally starting to understand the various facets of the Camis software, as well as firsthand experiencing an Agile environment.
         </P><br/><br/>
+
+        <figure>
+          <Image src={imgCamisInternsEclipse} />
+          <Center>
+            <P style={{textIndent: '0em'}}>Viewing the solar eclipse - April 8th, 2024</P>
+          </Center>
+        </figure><br/><br/>
   
         <Center>
           <Link href={'http://www.camis.com/'} fontFamily={'Manrope'}>Company Website</Link>
