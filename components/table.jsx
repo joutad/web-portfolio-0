@@ -11,6 +11,9 @@ import DeerHacks3 from '../public/images/links/deerhacks2024.png'
 import Condoworks from '../public/images/contents/condoworks.jpg'
 import Camis from '../public/images/contents/camis_inc_logo.jpeg'
 import Guelph from '../public/images/contents/guelph.png'
+import GenAIGenesis from "../public/images/links/genai_genesis_2024_logo.jpeg"
+import GDSCGuelph from "../public/images/links/gdscguelph_logo.jpeg"
+import HawkHacks from "../public/images/links/hawkhacks_logo.jpeg"
 import { Link } from '@chakra-ui/react'
 import Image from 'next/image'
 // import TableContents from '../components/table'
@@ -20,7 +23,7 @@ import React, { useState } from 'react'
 
 const TableContents = () => {
 
-  const [yearBio, setYearBio] = useState("2023")
+  const [yearBio, setYearBio] = useState("2024")
   const years = [2020, 2021, 2022, 2023, 2024]
   // const infoTable = {(
   //   <h1>YO</h1>
@@ -123,16 +126,36 @@ const TableContents = () => {
               <>
                 <tr>
                   <td>Jan 2024
-                    <Image src={Camis} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+                    <Image src={Camis} alt="Camis" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
                   </td>
                   <td>Started co-op at <Link href="https://www.camis.com/">Camis</Link> as a Software Developer!</td>
                 </tr>
                 <tr>
                   <td>Feb 2024
-                    <Image src={DeerHacks3} alt="Deer Hacks 2024" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: '#222'}}/><br/><br/>
+                    <Image src={DeerHacks3} alt="Deer Hacks" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: '#222'}}/><br/><br/>
                   </td>
                   <td>Participated in <Link href="https://deerhacks.ca/">DeerHacks III</Link> and <Link href="https://devpost.com/software/lil-learners">won</Link>!</td>
-                </tr> 
+                </tr>
+                <tr>
+                  <td>March 2024
+                    <Image src={GenAIGenesis} alt="Gen AI Genesis" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+                  </td>
+                  <td>Participated in the <Link href='https://genaigenesis.ca/'>GenAI Genesis</Link> hackathon.</td>
+                </tr>
+                <tr>
+                  <td>April 2024
+                    <Image src={ETHGlobal} alt="Scaling Ethereum 2024" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: '#222'}}/><br/><br/>
+                  </td>
+                  <td>Participated in the <Link href='https://ethglobal.com/events/scaling2024'>Scaling Ethereum</Link> hackathon.</td>
+                </tr>
+                <tr>
+                  <td>May 2024
+                    <Image src={GDSCGuelph} alt="GDSC Hacks Guelph" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+                    <Image src={HawkHacks} alt="Hawk Hacks" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'black'}}/><br/><br/>
+                  </td>
+                  <td>Participated in <Link href='https://www.gdschacks.com/'>GDSC Hacks Guelph</Link>, and participated in <Link href='https://hawkhacks.ca/'>Hawk Hacks</Link> and <Link href='https://taikai.network/hackbox/hackathons/hawkhacks/projects/clwd7m3bz0dl7z901dj51ngal/idea'>won</Link>!
+                  </td>
+                </tr>
               </>
             ) : ''
           }
