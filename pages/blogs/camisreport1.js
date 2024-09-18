@@ -12,10 +12,10 @@ import {
   import P from '../../components/paragraph'
   import Layout from '../../components/layouts/article'
   import Image from 'next/image'
-  import imgCamisPaymentSquad from '../../public/images/blogs/camis_payment_squad.PNG'
-  import imgCamisOlympicsTentBuilding from '../../public/images/blogs/camis_olympics_tentbuilding.JPG'
-  import imgCamisOlympicsGold from '../../public/images/blogs/camis_olympics_gold.JPG'
-  import imgCamisOlympicsAbandoned from '../../public/images/blogs/camis_olympics_abandoned.JPG'
+  import imgCamisPaymentSquad from '../../public/images/blogs/camis_payment_squad.png'
+  import imgCamisOlympicsTentBuilding from '../../public/images/blogs/camis_olympics_tentbuilding.jpg'
+  import imgCamisOlympicsGold from '../../public/images/blogs/camis_olympics_gold.jpg'
+  import imgCamisOlympicsAbandoned from '../../public/images/blogs/camis_olympics_abandoned.jpg'
   
   const h5Style = {
     fontFamily: 'Lora',
