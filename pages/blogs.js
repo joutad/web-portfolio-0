@@ -40,6 +40,15 @@ const Blogs = () => (
             </Text>
           </Link>
         </Section>
+        <Section>
+          <Link href={'/blogs/camisreport1'}>
+            <Image src={thumbCamisBanner} style={imgStyle} />
+            <Text mt={2} style={{textAlign: 'center'}} fontFamily={'Manrope'}>Camis Inc.</Text>
+            <Text fontSize={14} style={{textAlign: 'center'}}>
+              Summer Co-op 2024
+            </Text>
+          </Link>
+        </Section>
       </SimpleGrid>
     </Container>
   </Layout>
