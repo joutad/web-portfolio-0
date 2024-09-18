@@ -13,9 +13,9 @@ import {
   import Layout from '../../components/layouts/article'
   import Image from 'next/image'
   import imgCamisPaymentSquad from '../../public/images/blogs/camis_payment_squad.png'
-  import imgCamisOlympicsTentBuilding from '../../public/images/blogs/camis_olympics_tentbuilding.jpg'
-  import imgCamisOlympicsGold from '../../public/images/blogs/camis_olympics_gold.jpg'
-  import imgCamisOlympicsAbandoned from '../../public/images/blogs/camis_olympics_abandoned.jpg'
+  import imgCamisOlympicsTentBuilding from '../../public/images/blogs/camis_olympics_tentbuilding.png'
+  import imgCamisOlympicsGold from '../../public/images/blogs/camis_olympics_gold.png'
+  import imgCamisOlympicsAbandoned from '../../public/images/blogs/camis_olympics_abandoned.png'
   
   const h5Style = {
     fontFamily: 'Lora',
