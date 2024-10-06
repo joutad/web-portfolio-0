@@ -46,7 +46,7 @@ const Home = () => (
             Joudat Haroon
           </Heading>
           <p style={{fontFamily: 'Manrope'}}>CS @ UofG</p>
-          <p style={{fontFamily: 'Manrope'}}>Software Developer @ Camis (co-op)</p>
+          <p style={{fontFamily: 'Manrope'}}>Backend Developer @ Hackathons NA</p>
         </Box>
         <Box
           flexShrink={0}
