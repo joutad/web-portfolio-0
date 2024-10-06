@@ -14,6 +14,8 @@ import Guelph from '../public/images/contents/guelph.png'
 import GenAIGenesis from "../public/images/links/genai_genesis_2024_logo.jpeg"
 import GDSCGuelph from "../public/images/links/gdscguelph_logo.jpeg"
 import HawkHacks from "../public/images/links/hawkhacks_logo.jpeg"
+import HackThe6ix from "../public/images/links/hackthe6ix_logo.png"
+import HackathonsNA from "../public/images/links/hackathonsna.png"
 import { Link } from '@chakra-ui/react'
 import Image from 'next/image'
 // import TableContents from '../components/table'
@@ -154,6 +156,21 @@ const TableContents = () => {
                     <Image src={HawkHacks} alt="Hawk Hacks" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'black'}}/><br/><br/>
                   </td>
                   <td>Participated in <Link href='https://www.gdschacks.com/'>GDSC Hacks Guelph</Link>, and participated in <Link href='https://hawkhacks.ca/'>Hawk Hacks</Link> and <Link href='https://taikai.network/hackbox/hackathons/hawkhacks/projects/clwd7m3bz0dl7z901dj51ngal/idea'>won</Link>!
+                  </td>
+                </tr>
+                <tr>
+                  <td>August 2024
+                    <Image src={HackThe6ix} alt="Hack the 6" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+                  </td>
+                  <td>Participated in <Link href='https://hackthe6ix.com/'>Hack the 6ix</Link> hackathon.
+                  </td>
+                </tr>
+                <tr>
+                  <td>September 2024
+                    <Image src={Guelph} alt="University of Guelph" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+                    <Image src={HackathonsNA} alt="Hackathons NA" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'black'}}/><br/><br/>
+                  </td>
+                  <td>Starting my final year at the University of Guelph, and started working at <Link href='https://hackathonscanada.com/'>Hackathons NA</Link> as a Backend Developer!
                   </td>
                 </tr>
               </>

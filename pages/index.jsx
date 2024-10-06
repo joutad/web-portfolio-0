@@ -83,9 +83,10 @@ const Home = () => (
           I&apos;m a computer science student based in Guelph with a
           passion for full-stack development. Recently I&apos;ve been making
           an effort to be more active on <Link href='https://github.com/joutad'>GitHub</Link>.
-          At the moment, I&apos;m trying to incorporate Artificial Intelligence into my projects.
-          Currently, I&apos;m on a co-op at Camis as a Software Developer, where I&apos;ll be learning practical
-          Software Development skills, collaborating on sprints, and making meaningful contributions to the codebase.
+          At the moment, I&apos;m trying to incorporate Machine Learning into my projects.
+          Currently, I&apos;m on a study term at my University, where I&apos;m learning parallel computing and network skills,
+          as well as a few other electives. I&apos;m also simultaneously working as a Backend Developer at the newly
+          established <Link href='https://hackathonscanada.com/'>Hackathons NA</Link>.
         </Paragraph>
         <Center fontFamily={'Manrope'}>
           <Box align="center" mx={4} my={4} style={{display: 'inline'}}>
