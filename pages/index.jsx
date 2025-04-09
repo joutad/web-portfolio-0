@@ -195,8 +195,12 @@ const Home = () => {
           I ♥
         </Heading>
         <List marginInlineStart={"1.5rem"} listStyleType={'initial'}>
-          {interests.map((interest) => {
-            return (<ListItem style={{fontFamily: "Manrope"}}>{interest}</ListItem>)
+          {interests.map((interest, index) => {
+            return (
+              <ListItem key={index} style={{fontFamily: "Manrope"}}>
+                {interest}
+              </ListItem>
+            )
           })}
         </List>
       </Section>
