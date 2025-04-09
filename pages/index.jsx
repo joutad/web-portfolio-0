@@ -25,7 +25,11 @@ const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-const Home = () => (
+const Home = () => {
+  const resumeFile = "2025_03_31_Resume.pdf";
+  const interests = ["Programming", "Winter", "Music", "Events", "Hackathons", "TV", "Leetcode", "Exploring cities", "Fashion", "Reducing my carbon footprint"];
+
+  return (
   <Layout>
     <Container>
       <Box
@@ -80,19 +84,18 @@ const Home = () => (
           About Me
         </Heading>
         <Paragraph style={{fontFamily:"Manrope"}}>
-          I&apos;m a computer science student based in Guelph with a
+          I&apos;m a computer science student at the University of Guelph with a
           passion for full-stack development. Recently I&apos;ve been making
           an effort to be more active on <Link href='https://github.com/joutad'>GitHub</Link>.
-          At the moment, I&apos;m trying to incorporate Machine Learning into my projects.
-          Currently, I&apos;m on a study term at my University, where I&apos;m learning parallel computing and network skills,
-          as well as a few other electives. I&apos;m also simultaneously working as a Backend Developer at the newly
-          established <Link href='https://hackathonscanada.com/'>Hackathons NA</Link>.
+          Currently, I&apos;m taking my final semester at the University, where a lot of the topics are weighted toward application through major course projects.
+          I&apos;m learning about and building compilers, neural networks, games, and mobile applications, as well as taking an unrelated elective.
+          I&apos;m also simultaneously working as a Backend Developer at the newly established <Link href='https://hackathonscanada.com/'>Hackathons NA</Link>.
         </Paragraph>
         <Center fontFamily={'Manrope'}>
           <Box align="center" mx={4} my={4} style={{display: 'inline'}}>
             <Button
               as={NextLink}
-              href="/2025_01_11_Resume.pdf"
+              href={`/${resumeFile}`}
               scroll={false}
               rightIcon={<ViewIcon />}
               colorScheme={useColorModeValue('pink', 'yellow')}
@@ -118,77 +121,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        {/* <Table>
-          <tbody className='bioTable'>
-            <tr>
-              <td>Sept 2020
-                <Image src={Guelph} alt="bkitty" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
-              </td>
-              <td>Started studies at the University of Guelph.</td>
-            </tr>
-            <tr>
-              <td>May 2021
-                <Image src={bKitty} alt="bkitty" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/><br/>
-              </td>
-              <td>Participated in BCompathon, my first hackathon. I was unable to make a submission as I had to leave during the hackathon. I still decided to work on the <Link href="https://github.com/joutad/DiscordSlotMachine">project</Link> on my own time after the hackathon ended.</td>
-            </tr>
-            <tr>
-              <td>Jan 2022</td>
-              <td>Participated in Hack the Job 2022, my first <Link href="https://github.com/joutad/2d-golf-game">completed</Link> hackathon.</td>
-            </tr>
-            <tr>
-              <td>July 2022
-                <Image src={Condoworks} alt='Condoworks' width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br />
-              </td>
-              <td>Worked at <Link href='https://www.condoworks.co/'>Condoworks</Link> as a Junior Software Developer. Read more about it on my <Link href={'/blogs/condoworksreport'}>blog!</Link></td>
-            </tr>
-            <tr>
-              <td>May 2023
-                <Image src={GryphHacks} alt="AWS Summit" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/>
-              </td>
-              <td>Participated in <Link href='https://gryphhacks.com/home'>GryphHacks 2023</Link> and <Link href='https://gryphhacks-2023.devpost.com/project-gallery'>won</Link>.</td>
-            </tr>
-            <tr>
-              <td>June 2023
-                <Image src={ETHGlobal} alt="ETH Global" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/><br/>
-                <Image src={AWSSummit} alt="AWS Summit" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/><br/>
-                <Image src={CollisionConference} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem'}}/><br/><br/>
-              </td>
-              <td>Attended <Link href='https://aws.amazon.com/events/summits/toronto/'>AWS Summit 2023</Link>, participated in the <Link href='https://ethglobal.com/events/waterloo2023'>ETHGlobal Waterloo</Link> hackathon and volunteered at <Link href='https://collisionconf.com/'>Collision Conference</Link>.</td>
-            </tr>
-            <tr>
-              <td>July 2023
-              <Image src={PocketGamerConnects} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
-              </td>
-              <td>Volunteered for <Link href='https://www.pgconnects.com/toronto/'>Pocket Gamer Connects</Link>.</td>
-            </tr>
-            <tr>
-              <td>Aug 2023
-              <Image src={IgnitionHacks} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
-              </td>
-              <td>Participated in <Link href='https://www.ignitionhacks.org/'>Ignition Hacks</Link>.</td>
-            </tr>
-            <tr>
-              <td>Sept 2023
-              <Image src={HackTheNorth} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
-              </td>
-              <td>Volunteered for <Link href='https://hackthenorth.com/'>Hack The North</Link>.</td>
-            </tr>
-            <tr>
-              <td>Oct 2023
-              <Image src={HackTheValley8} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
-              </td>
-              <td>Participated in <Link href='https://hack-the-valley-8.devpost.com/'>Hack The Valley 8</Link> and won <Link href='https://devpost.com/software/heckler-ai'>First Place</Link>!</td>
-            </tr>
-            <tr>
-              <td>Jan 2024
-              <Image src={Camis} alt="Collision Conference" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
-              </td>
-              <td>Started co-op at <Link href="https://www.camis.com/">Camis</Link> as a Software Developer!</td>
-            </tr>
-          </tbody>
-        </Table> */}
-      <TableContents />
+        <TableContents />
       </Section>
 
       <Section delay={0.3}>
@@ -261,9 +194,11 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
-        <Paragraph style={{fontFamily: 'Manrope'}}>
-          Programming, Winter, Music, Events, Hackathons, TV, Leetcode, Exploring cities, Fashion, and Making an effort to reduce my carbon footprint.
-        </Paragraph>
+        <List marginInlineStart={"1.5rem"} listStyleType={'initial'}>
+          {interests.map((interest) => {
+            return (<ListItem style={{fontFamily: "Manrope"}}>{interest}</ListItem>)
+          })}
+        </List>
       </Section>
 
       <Section delay={0.3}>
@@ -308,7 +243,7 @@ const Home = () => (
       </Section>
     </Container>
   </Layout>
-)
+)}
 
 export default Home
 export { getServerSideProps } from '../components/chakra'

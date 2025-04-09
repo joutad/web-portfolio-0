@@ -25,13 +25,9 @@ import React, { useState } from 'react'
 
 const TableContents = () => {
 
-  const [yearBio, setYearBio] = useState("2024")
-  const years = [2020, 2021, 2022, 2023, 2024]
-  // const infoTable = {(
-  //   <h1>YO</h1>
-  // )}
+  const [yearBio, setYearBio] = useState("2025")
+  const years = [2020, 2021, 2022, 2023, 2024, 2025]
   
-
   return (
     <div>
        <div style={{margin: '0 auto', textAlign: 'center'}}>
@@ -46,7 +42,7 @@ const TableContents = () => {
           {yearBio === '2020' ?
             (<tr>
               <td>Sept 2020
-                <Image src={Guelph} alt="bkitty" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+                <Image src={Guelph} alt="University of Guelph" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
               </td>
               <td>Started studies at the University of Guelph.</td>
             </tr>) : ''
@@ -176,24 +172,20 @@ const TableContents = () => {
               </>
             ) : ''
           }
+          {yearBio === '2025' ? 
+            (
+              <>
+                <tr>
+                  <td>Jan 2025
+                    <Image src={Guelph} alt="University of Guelph" width={96} height={96} style={{position: 'relative', left: '5rem', top: '1rem', backgroundColor: 'white'}}/><br/><br/>
+                  </td>
+                  <td>Completing my final semester at the University of Guelph!</td>
+                </tr>
+              </>
+            ) : ''
+          }
         </tbody>
       </Table>
-      
-      {/* <Table className='2021'>
-        <tbody className="bioTable">
-          
-        </tbody>
-      </Table> */}
-      {/* <Table className='2022'>
-          <tbody className="bioTable">
-            
-          </tbody>
-      </Table> */}
-      {/* <Table className='2023'>
-          <tbody className="bioTable">
-            
-          </tbody>
-      </Table> */}
     </div>
   )
 }
