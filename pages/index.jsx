@@ -26,7 +26,7 @@ const ProfileImage = chakra(Image, {
 })
 
 const Home = () => {
-  const resumeFile = "2025_03_31_Resume.pdf";
+  const resumeFile = "2025_05_03_Resume.pdf";
   const interests = ["Programming", "Winter", "Music", "Events", "Hackathons", "TV", "Leetcode", "Exploring cities", "Fashion", "Reducing my carbon footprint"];
 
   return (
