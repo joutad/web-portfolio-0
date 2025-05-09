@@ -23,7 +23,7 @@ import styled from '@emotion/styled'
 
 import React, { useState } from 'react'
 
-const TableContents = () => {
+const BioTableContents = () => {
 
   const [yearBio, setYearBio] = useState("2025")
   const years = [2020, 2021, 2022, 2023, 2024, 2025]
@@ -190,7 +190,7 @@ const TableContents = () => {
   )
 }
 
-export default TableContents
+export default BioTableContents
 
 export const Table = styled.table`
     tbody.bioTable {
