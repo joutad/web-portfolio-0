@@ -17,7 +17,7 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub, IoLogoLinkedin, IoDisc } from 'react-icons/io5'
-import TableContents from '../components/table'
+import BioTableContents from '../components/bioTable'
 import Image from 'next/image'
 import { Skill, Skills } from '../components/skill'
 
@@ -121,7 +121,7 @@ const Home = () => {
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <TableContents />
+        <BioTableContents />
       </Section>
 
       <Section delay={0.3}>
